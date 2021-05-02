@@ -1,0 +1,32 @@
+.naglowekh1{
+    color:#420724d7
+}
+
+.przyciskUkryj{
+
+    float:left;
+    background: bisque;
+    border-color: black;
+    border-radius: 20%;
+}
+
+.przyciskShow {
+    float: right;
+    background-color: rgba(216, 203, 203, 0.781);
+    border-color: black;
+    border-radius: 20%;
+}
+.textShow {
+    background-color: rgba(216, 203, 203, 0.781);
+    border-color: black;
+}
+
+.slonce {
+background-color: rgba(173, 194, 194, 0.712);
+border-radius: 10%;
+}
+
+.todo {
+    color: rgba(19, 18, 20, 0.432);
+    background: bisque;
+}
