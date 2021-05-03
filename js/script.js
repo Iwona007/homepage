@@ -8,12 +8,17 @@ let przyciskText2 = document.querySelector(".textShow2")
 let slonceAkcji = document.querySelector(".slonce");
 let target = document.querySelector(".slonce")
 
+const newElement = slonceAkcji.cloneNode()
+console.log(newElement)
+
+const clone2 = slonceAkcji.cloneNode(true)
+console.log(clone2)
 
 przyciskShow.addEventListener("click", e => {
     let slonceAkcji = document.querySelector(".slonce");
     let clone = slonceAkcji.cloneNode(true)
     target.appendChild(clone)
-    console.log("obraz .jpg zostalo skopowane.")
+    // console.log("obraz .jpg zostalo skopowane.")
 });
 
 przyciskHide.addEventListener("click", () => {
