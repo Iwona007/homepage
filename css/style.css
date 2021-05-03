@@ -4,14 +4,14 @@
 
 .przyciskUkryj{
 
-    float:left;
+    float:right;
     background: bisque;
     border-color: black;
     border-radius: 20%;
 }
 
 .przyciskShow {
-    float: right;
+    float: left;
     background-color: rgba(216, 203, 203, 0.781);
     border-color: black;
     border-radius: 20%;

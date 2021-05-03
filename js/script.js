@@ -2,36 +2,34 @@ console.log("Hello my friend")
 
 let przyciskHide = document.querySelector(".przyciskUkryj")
 let przyciskShow = document.querySelector(".przyciskShow")
-let przycisktext = document.querySelector(".textShow")
+let przyciskText = document.querySelector(".textShow")
+let przyciskText2 = document.querySelector(".textShow2")
 
 let slonceAkcji = document.querySelector(".slonce");
 let target = document.querySelector(".slonce")
-
-// const newElement = slonceAkcji.cloneNode()
-// console.log(newElement)
-
-// const clone2 = slonceAkcji.cloneNode(true)
-// console.log(clone2)
 
 
 przyciskShow.addEventListener("click", e => {
     let slonceAkcji = document.querySelector(".slonce");
     let clone = slonceAkcji.cloneNode(true)
     target.appendChild(clone)
-
+    console.log("obraz .jpg zostalo skopowane.")
 });
 
 przyciskHide.addEventListener("click", () => {
     slonceAkcji.remove()
-    console.log("Przycisk jest usunięty")
+    console.log("obraz .jpg zostalo usunięte")
 });
 
-przycisktext.addEventListener("click", e => {
-    przycisktext.innerText = "Nowy text"
-
-    console.log("tekst który się wyświetla w konsoli developera")
+przyciskText.addEventListener("click", e => {
+    przyciskText.innerText = " Javie"
+    console.log("tekst który się wyświetla w konsoli developera po naciśnięciu \"kliknij aby przeczytać\" ")
 })
 
+przyciskText2.addEventListener("click", e => {
+    przyciskText2.innerHTML = "To jest nowy tekst napisay <span>za pomocą innerHTML </span>"
+    console.log("teskt który wyświtli się w konsloki developera po naciśnięciu przycisku \"Pokaż dodatkowy tekst\"")
+})
 
 
 
