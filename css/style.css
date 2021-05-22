@@ -1,9 +1,17 @@
-.header1{
-    color:#d7498fd7
+html {
+    box-sizing: border-box;
 }
 
-.buttonHide{
-    float:right;
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.header1 {
+    color: #d7498fd7
+}
+
+.buttonHide {
+    float: right;
     background: bisque;
     border-color: black;
     border-radius: 20%;
@@ -15,16 +23,17 @@
     border-color: black;
     border-radius: 20%;
 }
+
 .textShow {
     background-color: rgba(216, 203, 203, 0.781);
     border-color: black;
 }
 
 .sun {
-width: 20%;
-    height:20%;
-background-color: rgba(173, 194, 194, 0.712);
-border-radius: 10%;
+    width: 20%;
+    height: 20%;
+    background-color: rgba(173, 194, 194, 0.712);
+    border-radius: 10%;
 }
 
 .todo {
@@ -32,6 +41,45 @@ border-radius: 10%;
     background: bisque;
 }
 
-.subHeader2{
-    color:#d7498fd7
+.subHeader2 {
+    color: #d7498fd7
+}
+
+.bodyElement {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableCell {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tableHeader {
+    background-color: rgb(133, 119, 212);
+    font-weight: bolder;
+    color: rgba(240, 233, 233, 0.993);
+}
+
+.caption {
+    font-weight: 700;
+}
+
+.tableRow:nth-child(even) {
+    background-color:#eee;
+}
+.tableRow:hover{
+    background-color: #ddd;
+}
+
+.container{
+    overflow-x: auto;
 }

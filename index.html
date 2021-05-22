@@ -11,41 +11,95 @@
     <script defer src="js/script.js"></script>
 </head>
 
-<body>
+<body class="bodyElement">
+    <header>
+        <h1 contenteditable class="header1">Witaj na mojej stronie</h1>
+    </header>
 
-    <h1 contenteditable class="header1">Witaj na mojej stronie</h1>
+    <nav>
+        <ul>
+            <li>ll</li>
+        </ul>
+    </nav>
 
-    <p>Cześć, jestem Iwona i w chwili obecnej uczę sie <strong> języka niemieckiego</strong> oraz programowania w
-        <i><b>JavaScript</b></i>. Na codzień zajmuję się programowaniem w Javie w roli Junior developera :). Bardzo
-        chętnie podejmuje <br>
-        się również zadań na frontendzie :).
+    <main>
+        <p>Cześć, jestem Iwona i w chwili obecnej uczę sie <strong> języka niemieckiego</strong> oraz programowania w
+            <i><b>JavaScript</b></i>. Na codzień zajmuję się programowaniem w Javie w roli Junior developera :). Bardzo
+            chętnie podejmuje <br>
+            się również zadań na frontendzie :).
 
-    </p>
+        </p>
 
-    <div class="sun">
-        <img src="images/images2.png" alt="uśmiechniete słoneczko. Będzie do czasu aż zrobie nowe zdjęcie.">
-    </div>
+        <div class="sun">
+            <img src="images/images2.png" alt="uśmiechniete słoneczko. Będzie do czasu aż zrobie nowe zdjęcie.">
+        </div>
 
-    <p>Strona dziala w taki sposób że aby zobaczyć nowe slońce trzeba wybrać <b>"Pokaż słońce"</b> w pierwszej
-        kolejności.
-        <b>"Pokaż słońce"</b> nie dodaje słońca po jego wczęśniejszym usunięcu.
-    </p>
+        <p>Strona dziala w taki sposób że aby zobaczyć nowe slońce trzeba wybrać <b>"Pokaż słońce"</b> w pierwszej
+            kolejności.
+            <b>"Pokaż słońce"</b> nie dodaje słońca po jego wczęśniejszym usunięcu.
+        </p>
 
-    <br>
-    <button class="buttonShow">Pokaż słońce</button>
-    <button class="buttonHide">Ukryj słońce</button>
-    <br>
-
-    <h2 class="subHeader2">Hobby</h2>
-    <p>
         <br>
-        Poza pasją do programowania, uwielbiam <em>Zumbę oraz J.angielski</em>.
-        <button class="textShow"><em> kliknij aby przeczytać</em> </button>
-        <button class="textShow2">Pokaż dodatkowy text</button>
-    </p>
+        <button class="buttonShow">Pokaż słońce</button>
+        <button class="buttonHide">Ukryj słońce</button>
+        <br>
+
+        <h2 class="subHeader2">Hobby</h2>
+        <p>
+            <br>
+            Poza pasją do programowania, uwielbiam <em>Zumbę oraz J.angielski</em>.
+            <button class="textShow"><em> kliknij aby przeczytać</em> </button>
+            <button class="textShow2">Pokaż dodatkowy text</button>
+        </p>
 
 
-    <p class="todo">Póżniej tutaj będą kolejne treści.</p>
+        <p class="todo">Póżniej tutaj będą kolejne treści.</p>
+
+
+        <h3>JPA i Optimistic vs. Pessimistic Locking</h3>
+        <table class="table">
+            <div class="container">
+                <caption classs="caption">JPA: Optimistic and Pessimistic Locking</caption>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="col">Rodzaj lockingu</th>
+                    <th class="tableCell tableHeader" scope="col">Shered</th>
+                    <th class="tableCell tableHeader" scope="col">Exclusive</th>
+                    <th class="tableCell tableHeader" scope="col">Cos Nowego</th>
+                    <th class="tableCell tableHeader" scope="col">Cos Nowego</th>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Optimistic</th>
+                    <td class="tableCell">read</td>
+                    <td class="tableCell">cos</td>
+                    <td class="tableCell">cos</td>
+                    <td class="tableCell">cos</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Pessimistic</th>
+                    <td class="tableCell">write</td>
+                    <td class="tableCell">cos2</td>
+                    <td class="tableCell">cos</td>
+                    <td class="tableCell">cos</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Pessimistic</th>
+                    <td class="tableCell">write</td>
+                    <td class="tableCell">cos2</td>
+                    <td class="tableCell">cos</td>
+                    <td class="tableCell">cos</td>
+                </tr>
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="row">Pessimistic</th>
+                    <td class="tableCell">write</td>
+                    <td class="tableCell">cos2</td>
+                    <td class="tableCell">cos</td>
+                    <td class="tableCell">cos</td>
+                </tr>
+
+        </table>
+        </div>
+    </main>
+
 </body>
 
 </html>
