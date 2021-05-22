@@ -1,16 +1,15 @@
-.naglowekh1{
-    color:#420724d7
+.header1{
+    color:#d7498fd7
 }
 
-.przyciskUkryj{
-
+.buttonHide{
     float:right;
     background: bisque;
     border-color: black;
     border-radius: 20%;
 }
 
-.przyciskShow {
+.buttonShow {
     float: left;
     background-color: rgba(216, 203, 203, 0.781);
     border-color: black;
@@ -21,7 +20,9 @@
     border-color: black;
 }
 
-.slonce {
+.sun {
+width: 20%;
+    height:20%;
 background-color: rgba(173, 194, 194, 0.712);
 border-radius: 10%;
 }
@@ -29,4 +30,8 @@ border-radius: 10%;
 .todo {
     color: rgba(19, 18, 20, 0.432);
     background: bisque;
+}
+
+.subHeader2{
+
 }
