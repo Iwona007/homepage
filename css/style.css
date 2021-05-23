@@ -83,3 +83,19 @@ html {
 .container{
     overflow-x: auto;
 }
+
+.footer{
+    text-align: center;
+}
+
+.listItem{
+    margin: 10px 0;
+}
+
+.list{
+    padding-left: 11px;
+}
+
+.unorderedList{
+    list-style-type:"😎";
+}
