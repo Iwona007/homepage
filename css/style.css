@@ -7,7 +7,7 @@ html {
 }
 
 .header1 {
-    color: #d7498fd7
+    color: #d7498fd7;
 }
 
 .buttonHide {
@@ -29,7 +29,7 @@ html {
     border-color: black;
 }
 
-.sun {
+.myImage {
     width: 20%;
     height: 20%;
     background-color: rgba(173, 194, 194, 0.712);
@@ -41,8 +41,13 @@ html {
     background: bisque;
 }
 
+.newcolor {
+  background: aquamarine;
+}
+
+
 .subHeader2 {
-    color: #d7498fd7
+    color: #d7498fd7;
 }
 
 .bodyElement {
