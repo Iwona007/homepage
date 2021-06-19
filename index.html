@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iwona Adamkiewicz - programistka</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
@@ -18,14 +18,17 @@
 
     <nav>
         <ul class="list unorderedList">
-            <li class="listItem">O mnie</li>
-            <li class="listItem">Hobby</li>
-            <li class="listItem">Jak działa strona</li>
+            <li class="listItem"><a class="link" href="#o-mnie">O mnie</a></li>
+            <li class="listItem"><a class="link" href="#hobby">Hobby</a></li>
+            <li class="listItem"><a class="link" href="#how-page-works">Jak działa strona</a></li>
+            <li class="listItem"><a class="link" href="#Sql-izolacja-transakcji">
+                    Sql:poziomy-izolacji-transakcji. Tabela</a></li>
+
         </ul>
     </nav>
 
     <main>
-        <article>
+        <article class="section myFont" id="o-mnie">
             <p>Cześć, jestem Iwona i na codzień pracuję jako junior Java developerem. Poza pracą uczę się <strong>
                     języka
                     niemieckiego </strong> co jest dla mnie wyzwaniem. Obecnie uczę się języka w programowaniu.
@@ -34,11 +37,11 @@
                 od stroy fronendu.
             </p>
 
-            <div class="myImage">
-                <img src="images/zdj.png" alt="Iwona - autoka strony.">
+            <div class="imageStyle">
+                <img class="imageStyle" src="images/zdj.png" alt="Iwona - autoka strony.">
             </div>
         </article>
-        <section>
+        <section class="section" id="hobby">
             <h2 class="subHeader2">Hobby</h2>
             <p>
                 Poza pasją do programowania, uwielbiam <em>Zumbę oraz j.angielski</em> o który staram się dbać poprzez
@@ -47,69 +50,94 @@
                 zrozumieć działanie Hibernat'a
                 który również jest obszernym tematem. W czasie przerw pomiędzy pracą i nauką dbam o aktywny odpoczynek
                 poprzez fitness i
-                <button class="textShow"><em> kliknij aby przeczytać</em> </button>.
-                <button class="textShow2">Pokaż dodatkowy text</button>
+                <button class="textShow buttonStyle"><em> kliknij aby przeczytać</em> </button>.
+                <button class="textShow2 buttonStyle">Pokaż dodatkowy text</button>
             </p>
         </section>
 
-        <section>
-            <p>Strona działa w taki sposób że aby zobaczyć nowe zdj trzeba wybrać <b>"Show img"</b> w pierwszej
-                kolejności.
-                <b>"Show img"</b> nie dodaje zdjecie po jego wczęśniejszym usunięcu.
-            </p>
+        <section class="section" id="how-page-works">
+            <p>Strona działa w taki sposób że albo klonuje zdjęcie albo je usówa. </p>
 
             <br>
-            <button class="buttonShow">Show img</button>
-            <button class="buttonHide">Hide img</button>
+            <button class="buttonRemove buttonStyle">Remove img</button>
+            <button class="buttonClone buttonStyle">Clone img</button>
             <br>
         </section>
 
-        <p class="todo">Póżniej tutaj będą kolejne treści.</p>
+        <section class="section todo" id="Sql-izolacja-transakcji">
+            <button class="todoChangecolor buttonStyle">Zmien tło na kolor: <span class="color">Snow</span>
+            </button>
+            <table class="table">
+                <caption class="caption">SQL: poziomy izolacji transakcji</caption>
+                <thead>
+                    <th class="tableRow">
+                    <th class="tableCell tableHeader" scope="col">x</th>
+                    <th class="tableCell tableHeader" scope="col">Dirty read</th>
+                    <th class="tableCell tableHeader" scope="col">Non repeatable read</th>
+                    <th class="tableCell tableHeader" scope="col">Phantom read</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <th class="tableRow"></th>
+                    <th class="tableCell tableHeader" scope="row">Read uncommitted</th>
+                    <td class="tableCell">Possible</td>
+                    <td class="tableCell">Possible</td>
+                    <td class="tableCell">Possible</td>
+                    </tr>
+                    <th class="tableRow"></th>
+                    <th class="tableCell tableHeader" scope="row">Read commited</th>
+                    <td class="tableCell">Solved</td>
+                    <td class="tableCell">Possible</td>
+                    <td class="tableCell">Possible</td>
+                    </tr>
+                    <th class="tableRow"></th>
+                    <th class="tableCell tableHeader" scope="row">Repeatable read</th>
+                    <td class="tableCell">Solved</td>
+                    <td class="tableCell">Solved</td>
+                    <td class="tableCell">Possible</td>
+                    </tr>
+                    <th class="tableRow"></th>
+                    <th class="tableCell tableHeader" scope="row">Serializable</th>
+                    <td class="tableCell">Solved</td>
+                    <td class="tableCell">Solved</td>
+                    <td class="tableCell">Solved</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article class="section">
+            <h3 class="subHeader3"> 4 poziomy izolacji transakcji</h3>
+            <p>Wystepują 4 poziomy izolacji transakcji:
+            <ol>
+                <li>Read uncommitted</li>
+                <li>Read commited</li>
+                <li>Repeatable read</li>
+                <li>Serializable</li>
+            </ol>
+            Powstały one w celu zabezpieczenia spojnośći danych. Wiaże się to z kożystanie z bazy danych przez wielu
+            użytkowników. W związku z czym moze dojść do modyfikacji np. przez użytkownika nr.2 pomiędzy
+            sprawdzeniem danych przez np użytkownika nr.1, i wykonaniem aktalizacji tych danych przez użytkownika
+            nr.1. W tabeli zostały przedstawione blokowania z informacją które problemy zostały rowiązane a które
+            nie.
 
-        <button class="todoChangecolor">Zmien tło </button>
+            Tak więc: <br />
+            <strong><i>Read uncommitted:</i></strong> Transakcja nr1 odczytuje dane które są modyfikowane przez
+            transakcje nr2 przed
+            zatwierdzeniem tej transakcji. <br />
+            <strong><i>Read commited:</i></strong> Transakcja nr.1 jest zalorzona blokada dzieki której transakcja nr.2
+            nie może
+            czytać danych aż do
+            zakończenia transakcji nr.1. Rozwiązuje to problem "dirty read" czyli odczytu danych ktor nie zosatły
+            jeszcze ani zatwierdzone ani wycofane. <br />
+            <strong><i>Repeatable read:</i></strong>
+            Transakcja nr.1 w czasie odczytu danych zakłada blokadę aż do zakończenia transakcji.
+            Inne transakcje nie mogą więc wprowadzac zmian.<br />
+            <strong><i>Serializable:</i></strong> Transakcja nr.1 zakłada blokadę aż do zakończenia transakcji. Inne transakcje nie
+            mogą wprowadzać zmian, dodawać, czy usuwać dane. Pozostałe transakcje czeklją aż transakcja nr.1 się
+            zakończy.
+            </p>
+        </article>
 
-        <h3>JPA i Optimistic vs. Pessimistic Locking</h3>
-        <table class="table">
-            <div class="container">
-                <caption classs="caption">JPA: Optimistic and Pessimistic Locking</caption>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="col">Rodzaj lockingu</th>
-                    <th class="tableCell tableHeader" scope="col">Shered</th>
-                    <th class="tableCell tableHeader" scope="col">Exclusive</th>
-                    <th class="tableCell tableHeader" scope="col">Cos Nowego</th>
-                    <th class="tableCell tableHeader" scope="col">Cos Nowego</th>
-                </tr>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="row">Optimistic</th>
-                    <td class="tableCell">read</td>
-                    <td class="tableCell">cos</td>
-                    <td class="tableCell">cos</td>
-                    <td class="tableCell">cos</td>
-                </tr>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="row">Pessimistic</th>
-                    <td class="tableCell">write</td>
-                    <td class="tableCell">cos2</td>
-                    <td class="tableCell">cos</td>
-                    <td class="tableCell">cos</td>
-                </tr>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="row">Pessimistic</th>
-                    <td class="tableCell">write</td>
-                    <td class="tableCell">cos2</td>
-                    <td class="tableCell">cos</td>
-                    <td class="tableCell">cos</td>
-                </tr>
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="row">Pessimistic</th>
-                    <td class="tableCell">write</td>
-                    <td class="tableCell">cos2</td>
-                    <td class="tableCell">cos</td>
-                    <td class="tableCell">cos</td>
-                </tr>
-
-        </table>
-        </div>
     </main>
     <footer class="footer">
         <p>Copyright 2021</p>
