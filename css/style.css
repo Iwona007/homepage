@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 *, ::after, ::before {
@@ -10,18 +11,27 @@ html {
     color: #d7498fd7;
 }
 
-.buttonHide {
+.buttonRemove {
     float: right;
     background: bisque;
     border-color: black;
-    border-radius: 20%;
 }
 
-.buttonShow {
+.buttonClone {
     float: left;
-    background-color: rgba(216, 203, 203, 0.781);
+    background: bisque;
     border-color: black;
-    border-radius: 20%;
+}
+
+.taniec {
+    width: 0px;
+    border-radius: 5%;
+    border-color: rgb(134, 17, 41);
+    background-color: rgb(34, 31, 32);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
 }
 
 .textShow {
@@ -30,24 +40,29 @@ html {
 }
 
 .myImage {
-    width: 20%;
-    height: 20%;
-    background-color: rgba(173, 194, 194, 0.712);
-    border-radius: 10%;
+    border-radius: 50%;
+}
+
+.imageStyle {
+    width: 50%;
+    border-radius: 50%;
 }
 
 .todo {
     color: rgba(19, 18, 20, 0.432);
-    background: bisque;
+    background: #eceff1;
 }
 
 .newcolor {
-  background: aquamarine;
+    background: #fbfbfb;
 }
-
 
 .subHeader2 {
     color: #d7498fd7;
+}
+
+.subHeader3 {
+    text-align: center;
 }
 
 .bodyElement {
@@ -57,12 +72,17 @@ html {
 }
 
 .table {
+    
+    
     border-collapse: collapse;
+    /* border-radius: 50px; */
     width: 100%;
+    /* border: 3px solid rgb(235, 19, 19); */
 }
 
 .tableCell {
-    border: 1px solid #ccc;
+    border: 2px solid purple;
+    /* border-radius: 0px 20px 20px 0px; */
     padding: 10px;
     text-align: center;
     vertical-align: middle;
@@ -72,35 +92,81 @@ html {
     background-color: rgb(133, 119, 212);
     font-weight: bolder;
     color: rgba(240, 233, 233, 0.993);
+    /* border-radius: 30px; */
 }
 
 .caption {
-    font-weight: 700;
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
 }
 
 .tableRow:nth-child(even) {
-    background-color:#eee;
+    background-color: #eee;
 }
-.tableRow:hover{
+
+.tableRow:hover {
     background-color: #ddd;
 }
 
-.container{
+.container {
     overflow-x: auto;
 }
 
-.footer{
+.footer {
     text-align: center;
 }
 
-.listItem{
+.listItem {
     margin: 10px 0;
 }
 
-.list{
+.list {
     padding-left: 11px;
 }
 
-.unorderedList{
-    list-style-type:"😎";
+.unorderedList {
+    list-style-type: "😎";
+}
+
+.section {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 0;
+    border: 2px solid blue;
+    margin: 5px auto 5px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: rgba(165, 15, 48, 0.705);
+}
+
+.link:focus {
+    outline: 2px solid currentColor;
+}
+
+.link:hover {
+    color: rgba(167, 80, 80, 0.178);
+    /* border-bottom: 1px solid; */
+    outline: none;
+}
+
+.myFont {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+.buttonStyle {
+    border-radius: 5%;
+    border-color: rgb(134, 17, 41);
+    background-color: rgb(187, 25, 58);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
 }
