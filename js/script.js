@@ -1,47 +1,49 @@
-console.log("Hello my friend");
+console.log("Cześć :), witaj na mojej stronie");
 
-let przyciskHide = document.querySelector(".buttonHide");
-let przyciskShow = document.querySelector(".buttonShow");
-let przyciskText = document.querySelector(".textShow");
-let przyciskText2 = document.querySelector(".textShow2");
+let buttonRemove = document.querySelector(".buttonRemove");
+let showTextButton = document.querySelector(".textShow");
+let showTextButton2 = document.querySelector(".textShow2");
 
-let slonceAkcji = document.querySelector(".myImage");
-let target = document.querySelector(".myImage");
+let cloneImage = document.querySelector(".buttonClone");
+let imageAction = document.querySelector(".imageStyle");
+let target = document.querySelector(".imageStyle");
 let todo = document.querySelector(".todo");
 let changeColor = document.querySelector(".todoChangecolor");
+let color = document.querySelector(".color")
 
-const newElement = slonceAkcji.cloneNode();
-console.log(newElement);
-
-const clone2 = slonceAkcji.cloneNode(true);
-console.log(clone2);
-
-przyciskShow.addEventListener("click", e => {
-    let slonceAkcji = document.querySelector(".myImage");
-    let clone = slonceAkcji.cloneNode(true);
-    target.appendChild(clone);
+cloneImage.addEventListener("click", e => {
+    let imageAction = document.querySelector(".imageStyle");
+    let cloneImage = imageAction.cloneNode(true);
+    target.appendChild(cloneImage);
     // console.log("obraz .jpg zostalo skopowane.")
 });
 
-przyciskHide.addEventListener("click", () => {
-    slonceAkcji.remove();
-    console.log("obraz .jpg zostalo usunięte");
+
+buttonRemove.addEventListener("click", () => {
+    imageAction.remove();
 });
 
-przyciskText.addEventListener("click", e => {
-    przyciskText.innerText = " taniec"
+showTextButton.addEventListener("click", e => {
+    showTextButton.innerText = " taniec"
     console.log("tekst który się wyświetla w konsoli developera po naciśnięciu \"kliknij aby przeczytać\" ");
 });
 
-przyciskText2.addEventListener("click", e => {
-    przyciskText2.innerHTML = "To jest nowy tekst napisay <span>za pomocą innerHTML </span>"
+showTextButton2.addEventListener("click", e => {
+    showTextButton2.innerHTML = "To jest nowy tekst napisay <span>za pomocą innerHTML </span>"
     console.log("teskt który wyświtli się w konsloki developera po naciśnięciu przycisku \"Pokaż dodatkowy tekst\"");
 });
 
-
 changeColor.addEventListener("click", e => {
-    todo.classList.toggle("newcolor")
+    todo.classList.toggle("newcolor");
+    if (todo.classList.contains("newcolor")) {
+        color.innerHTML = "Snow";
+    } else {
+        color.innerHTML = "Alice blue";
+    }
 });
+
+
+
 
 
 
