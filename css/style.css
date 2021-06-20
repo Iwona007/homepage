@@ -23,22 +23,6 @@ html {
     border-color: black;
 }
 
-.taniec {
-    width: 0px;
-    border-radius: 5%;
-    border-color: rgb(134, 17, 41);
-    background-color: rgb(34, 31, 32);
-    border-radius: 10px;
-    color: white;
-    padding: 5px;
-    font-weight: bold;
-}
-
-.textShow {
-    background-color: rgba(216, 203, 203, 0.781);
-    border-color: black;
-}
-
 .myImage {
     border-radius: 50%;
 }
@@ -90,7 +74,6 @@ html {
     background-color: rgb(133, 119, 212);
     font-weight: bolder;
     color: rgba(240, 233, 233, 0.993);
-    /* border-radius: 30px; */
 }
 
 .caption {
@@ -132,7 +115,7 @@ html {
     width: 100%;
     font-size: 18px;
     padding: 10px 0;
-    border: 2px solid blue;
+    border: 2px solid rgba(165, 15, 48, 0.705);
     margin: 5px auto 5px;
 }
 
