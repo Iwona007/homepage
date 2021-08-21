@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head></head>
+
+<body>
+
+    <form>
+        <p>
+            <lable>
+                Imię i nazwisko <input name="name" value="Iwona Adamkiewicz" readonly>
+            </lable>
+
+            <!-- lub -->
+        </p>
+        <p>
+            <button>Wyślij!</button>
+        </p>
+        <p>
+            <label for="name2">Imię i nazwisko:</label>
+            <input name="name2" id="name2" placeholder="Wpisz swoie imię i nazwisko" autofocus>
+            <button>Wyślij 2</button>
+            <!-- lub -->
+            <input type="submit" value="Wyślij3">
+            <button type="reset">Wyczyść formularz</button>
+        </p>
+
+        <div>
+            <p>
+                <label>Opis:
+                    <textarea name="description" rows="5" cols="30">Domyslna wartość</textarea>
+
+            </p>
+        </div>
+
+
+        <div>
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <p>
+                    <label>Imię: <input name="firstName"></label>
+                </p>
+                <p>
+                    <label>Nazwisko: <input name="lastName"></label>
+                </p>
+            </fieldset>
+            <input type="submit" value="Wyślij3">
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Ulubieni wokaliści</legend>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" name="Kuba Badach" value="kuba">
+                            Kuba Badach</label>
+                    </li>
+                    <li>
+                        <label> <input type="checkbox" name="Justin Timberlake">
+                            Justin Timberlake</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button>Wyslij mnie</button>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Ulubiony wokalista</legend>
+                <ul>
+                    <li>
+                        <lable>
+                            <input type="radio" name="favouriteSinger" value="Kuba Badach" checked>
+                            Kuba Badach
+                        </lable>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="favouriteSinger" value="Timberlake">
+                            Justin Timberlake
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button>Wyslij</button>
+        </div>
+
+        <!-- Select -->
+
+        <div>
+            <p>
+                <label>Ulubiony wokalista</label>
+                <Select name="favouriteSinger">
+                    <option value="badach">Kuba Badach</option>
+                    <option value="Timbelake" selected>Justin Timberlake</option>
+                </Select>
+            </p>
+            <p>
+                <button>Wyslij</button>
+                <button type="reset">Wyczyść formularz</button>
+            </p>
+        </div>
+        <!-- input file -->
+
+        <div>
+            <p>
+                <label>Załącz swoje Cv:(może być kilka plików)
+                    <input type="file" name="cv" multiple>
+                </label>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <label>Adres e-mail
+                    <input type="email" name="e-mail">
+                </label>
+                <button>Wyślij</button>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <label>Hasło
+                    <input type="password" name="password">
+                </label>
+                <button>Wyślij</button>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <label>Podaj wzrost
+                    <input type="number" name="number" step="5"> 
+                    <!-- mge podac any, 0.2, min max -->
+                </label>
+                <button>Wyślij</button>
+            </p>
+        </div>
+<!-- input range -->
+<div>
+    <p>
+        <label>maksymalna cena
+            <input type="range" name="range" min="100" max="1000" step="100" > 
+           
+        </label>
+        <button>Wyślij</button>
+    </p>
+<!-- numer telefonu -->
+<div>
+    <p>
+        <label>numer telefonu
+            <input type="tel" name="numerTelefonu"  > 
+           
+        </label>
+        <button>Wyślij</button>
+    </p>
+</div>
+
+<!-- Adres strony url -->
+<div>
+    <p>
+        <label>Adres strony url
+            <input type="url" name="url"  > 
+           
+        </label>
+        <button>Wyślij</button>
+    </p>
+</div>
+
+<!-- auto completebox -->
+<div>
+    <p>
+        <label>Marka samochodu</label>
+        <Select name="CarBrand" list="carBrands">
+            <datalist id="carBrands">
+            <option >BMW</option>
+            <option>Audi</option>
+            <option >Mazda</option>
+            <option>Toyota</option>
+            </datalist>
+        </Select>
+    </p>
+    <p>
+        <button>Wyslij</button>
+        <button type="reset">Wyczyść formularz</button>
+    </p>
+</div>
+<div>
+    <p>
+       
+            <input type="hidden" name="secret" value="dddd" > 
+           
+        <button>Wyślij</button>
+    </p>
+</div>
+<!-- kolor -->
+<div>
+    <p>
+        <label>Kolor
+            <input type="color" name="color" value="#cccccc" > 
+           
+        </label>
+        <button>Wyślij</button>
+    </p>
+</div>
+<!-- data i czas-->
+<div>
+    <p>
+        <label>Kolor
+            <input type="date" name="date" > 
+            <input type="datetime" name="dateAndTime" > 
+            <input type="time" name="time" > 
+            <input type="week" name="week" > 
+            <input type="month" name="month" >
+        </label>
+        <button>Wyślij</button>
+    </p>
+</div>
+    </form>
+</body>
+
+
+
+</html>
