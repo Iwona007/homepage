@@ -20,7 +20,7 @@
         <ul class="list unorderedList">
             <li class="listItem"><a class="link" href="#o-mnie">O mnie</a></li>
             <li class="listItem"><a class="link" href="#hobby">Hobby</a></li>
-            <li class="listItem"><a class="link" href="#how-page-works">Jak działa strony</a></li>
+            <li class="listItem"><a class="link" href="#how-page-works">Jak działa strona</a></li>
             <li class="listItem"><a class="link" href="#Sql-izolacja-transakcji">
                     Sql:poziomy-izolacji-transakcji. Tabela</a></li>
 
@@ -33,7 +33,8 @@
                     języka
                     niemieckiego </strong> co jest dla mnie wyzwaniem. Obecnie uczę się języka w programowaniu.
                 oraz programowania w <i><b>JavaScript</b></i>. Zapisałam się na kurs ponieważ chcę nabyć umijętności w
-                pisaniu repsponsywnych stron intenetowych. I w tym celu zaprzyjaźnić się z <i><b>JavaScriptem :)</b></i>.
+                pisaniu repsponsywnych stron intenetowych. I w tym celu zaprzyjaźnić się z <i><b>JavaScriptem
+                        :)</b></i>.
             </p>
 
             <div class="imageStyle">
@@ -48,7 +49,8 @@
                 w tym języku lub też uczenie się z tutoriali angielsko języcznych. W czasie przerw pomiędzy pracą i
                 nauką dbam o aktywny odpoczynek
                 poprzez fitness lub
-                <button class="buttonStyle changeText "><em><span class="textContain">kliknij aby przeczytać</span></em> </button>.
+                <button class="buttonStyle changeText "><em><span class="textContain">kliknij aby przeczytać</span></em>
+                </button>.
                 <button class="textShow2 buttonStyle">Pokaż dodatkowy text</button>
             </p>
         </section>
@@ -65,44 +67,53 @@
         <section class="section todo" id="Sql-izolacja-transakcji">
             <button class="todoChangecolor buttonStyle">Zmień tło na kolor: <span class="color">Snow</span>
             </button>
+
+            <div class="container">
             <table class="table">
                 <caption class="caption">SQL: poziomy izolacji transakcji</caption>
                 <thead>
-                    <th class="tableRow">
-                    <th class="tableCell tableHeader" scope="col">x</th>
-                    <th class="tableCell tableHeader" scope="col">Dirty read</th>
-                    <th class="tableCell tableHeader" scope="col">Non repeatable read</th>
-                    <th class="tableCell tableHeader" scope="col">Phantom read</th>
+                    <tr>
+                        <th class="tableRow">
+                        <th class="tableCell tableHeader" scope="col">x</th>
+                        <th class="tableCell tableHeader" scope="col">Dirty Read</th>
+                        <th class="tableCell tableHeader" scope="col">Non Repeatable Read</th>
+                        <th class="tableCell tableHeader" scope="col">Phantom Read</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <th class="tableRow"></th>
-                    <th class="tableCell tableHeader" scope="row">Read uncommitted</th>
-                    <td class="tableCell">Possible</td>
-                    <td class="tableCell">Possible</td>
-                    <td class="tableCell">Possible</td>
+                    <tr>
+                        <th class="tableRow"></th>
+                        <th class="tableCell tableHeader" scope="row">Read Uncommitted</th>
+                        <td class="tableCell">Possible</td>
+                        <td class="tableCell">Possible</td>
+                        <td class="tableCell">Possible</td>
                     </tr>
-                    <th class="tableRow"></th>
-                    <th class="tableCell tableHeader" scope="row">Read commited</th>
-                    <td class="tableCell">Solved</td>
-                    <td class="tableCell">Possible</td>
-                    <td class="tableCell">Possible</td>
+                    <tr>
+                        <th class="tableRow"></th>
+                        <th class="tableCell tableHeader" scope="row">Read Commited</th>
+                        <td class="tableCell">Solved</td>
+                        <td class="tableCell">Possible</td>
+                        <td class="tableCell">Possible</td>
                     </tr>
-                    <th class="tableRow"></th>
-                    <th class="tableCell tableHeader" scope="row">Repeatable read</th>
-                    <td class="tableCell">Solved</td>
-                    <td class="tableCell">Solved</td>
-                    <td class="tableCell">Possible</td>
+                    <tr>
+                        <th class="tableRow"></th>
+                        <th class="tableCell tableHeader" scope="row">Repeatable Read</th>
+                        <td class="tableCell">Solved</td>
+                        <td class="tableCell">Solved</td>
+                        <td class="tableCell">Possible</td>
                     </tr>
-                    <th class="tableRow"></th>
-                    <th class="tableCell tableHeader" scope="row">Serializable</th>
-                    <td class="tableCell">Solved</td>
-                    <td class="tableCell">Solved</td>
-                    <td class="tableCell">Solved</td>
+                    <tr>
+                        <th class="tableRow"></th>
+                        <th class="tableCell tableHeader" scope="row">Serializable</th>
+                        <td class="tableCell">Solved</td>
+                        <td class="tableCell">Solved</td>
+                        <td class="tableCell">Solved</td>
                     </tr>
                 </tbody>
             </table>
+        </div>
         </section>
+
         <article class="section">
             <h3 class="subHeader3"> 4 poziomy izolacji transakcji</h3>
             <p>Wystepują 4 poziomy izolacji transakcji:

@@ -101,6 +101,7 @@ html {
 
 .listItem {
     margin: 10px 0;
+    outline: n;
 }
 
 .list {
@@ -132,8 +133,8 @@ html {
 }
 
 .link:hover {
-    color: rgba(167, 80, 80, 0.178);
-    /* border-bottom: 1px solid; */
+    color:black;
+    border-bottom: 1px solid;
     outline: none;
 }
 
