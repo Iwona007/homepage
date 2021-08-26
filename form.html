@@ -9,46 +9,40 @@
 
 <body>
 
-    <form>
+    <!-- form action do testowania -->
+    <form action="https://postman-echo.com/get">
         <p>
             <lable>
                 Imię i nazwisko <input name="name" value="Iwona Adamkiewicz" readonly>
             </lable>
-
-            <!-- lub -->
         </p>
-        <p>
-            <button>Wyślij!</button>
-        </p>
+        <!-- lub -->
         <p>
             <label for="name2">Imię i nazwisko:</label>
             <input name="name2" id="name2" placeholder="Wpisz swoie imię i nazwisko" autofocus>
-            <button>Wyślij 2</button>
-            <!-- lub -->
-            <input type="submit" value="Wyślij3">
-            <button type="reset">Wyczyść formularz</button>
         </p>
 
         <div>
             <p>
                 <label>Opis:
                     <textarea name="description" rows="5" cols="30">Domyslna wartość</textarea>
-
             </p>
         </div>
-
 
         <div>
             <fieldset>
                 <legend>Dane osobowe</legend>
+                <p>Pola wymagane oznaczone są gwiazdką *</p>
                 <p>
-                    <label>Imię: <input name="firstName"></label>
+                    <label>Imię*: <input name="firstName" minlength="3" required></label>
                 </p>
                 <p>
-                    <label>Nazwisko: <input name="lastName"></label>
+                    <label>Nazwisko*: <input name="lastName" minlength="3" required></label>
+                </p>
+                <p>
+                    <label>Kod pocztowy*: <input name="kod pocztowy" pattern="[0-9]{2}-[0-9]{3}"></label>
                 </p>
             </fieldset>
-            <input type="submit" value="Wyślij3">
         </div>
 
         <div>
@@ -66,7 +60,6 @@
                     </li>
                 </ul>
             </fieldset>
-            <button>Wyslij mnie</button>
         </div>
 
         <div>
@@ -87,7 +80,6 @@
                     </li>
                 </ul>
             </fieldset>
-            <button>Wyslij</button>
         </div>
 
         <!-- Select -->
@@ -100,17 +92,21 @@
                     <option value="Timbelake" selected>Justin Timberlake</option>
                 </Select>
             </p>
-            <p>
-                <button>Wyslij</button>
-                <button type="reset">Wyczyść formularz</button>
-            </p>
         </div>
         <!-- input file -->
-
         <div>
             <p>
                 <label>Załącz swoje Cv:(może być kilka plików)
                     <input type="file" name="cv" multiple>
+                </label>
+            </p>
+        </div>
+
+        <!-- wyrazenia regularne pattern -->
+        <div>
+            <p>
+                <label>Protokół (http lub https)
+                    <input name="protokol" pattern="https?">
                 </label>
             </p>
         </div>
@@ -120,108 +116,98 @@
                 <label>Adres e-mail
                     <input type="email" name="e-mail">
                 </label>
-                <button>Wyślij</button>
             </p>
         </div>
 
         <div>
             <p>
-                <label>Hasło
-                    <input type="password" name="password">
+                <label>Hasło (co najmniej jedna litera mala, jedna wielka, i jedna cyfra, co najmniej 8 znaków)
+                    <input type="password" name="password" required
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}">
                 </label>
-                <button>Wyślij</button>
             </p>
         </div>
 
         <div>
             <p>
                 <label>Podaj wzrost
-                    <input type="number" name="number" step="5"> 
+                    <input type="number" name="number" step="5" min="150" max="200">
                     <!-- mge podac any, 0.2, min max -->
                 </label>
-                <button>Wyślij</button>
             </p>
         </div>
-<!-- input range -->
-<div>
-    <p>
-        <label>maksymalna cena
-            <input type="range" name="range" min="100" max="1000" step="100" > 
-           
-        </label>
-        <button>Wyślij</button>
-    </p>
-<!-- numer telefonu -->
-<div>
-    <p>
-        <label>numer telefonu
-            <input type="tel" name="numerTelefonu"  > 
-           
-        </label>
-        <button>Wyślij</button>
-    </p>
-</div>
+        <!-- input range -->
+        <div>
+            <p>
+                <label>maksymalna cena
+                    <input type="range" name="range" min="100" max="1000" step="100">
+                </label>
+            </p>
+            <!-- numer telefonu -->
+            <div>
+                <p>
+                    <label>numer telefonu
+                        <input type="tel" name="numerTelefonu">
 
-<!-- Adres strony url -->
-<div>
-    <p>
-        <label>Adres strony url
-            <input type="url" name="url"  > 
-           
-        </label>
-        <button>Wyślij</button>
-    </p>
-</div>
+                    </label>
+                </p>
+            </div>
 
-<!-- auto completebox -->
-<div>
-    <p>
-        <label>Marka samochodu</label>
-        <Select name="CarBrand" list="carBrands">
-            <datalist id="carBrands">
-            <option >BMW</option>
-            <option>Audi</option>
-            <option >Mazda</option>
-            <option>Toyota</option>
-            </datalist>
-        </Select>
-    </p>
-    <p>
-        <button>Wyslij</button>
-        <button type="reset">Wyczyść formularz</button>
-    </p>
-</div>
-<div>
-    <p>
-       
-            <input type="hidden" name="secret" value="dddd" > 
-           
-        <button>Wyślij</button>
-    </p>
-</div>
-<!-- kolor -->
-<div>
-    <p>
-        <label>Kolor
-            <input type="color" name="color" value="#cccccc" > 
-           
-        </label>
-        <button>Wyślij</button>
-    </p>
-</div>
-<!-- data i czas-->
-<div>
-    <p>
-        <label>Kolor
-            <input type="date" name="date" > 
-            <input type="datetime" name="dateAndTime" > 
-            <input type="time" name="time" > 
-            <input type="week" name="week" > 
-            <input type="month" name="month" >
-        </label>
-        <button>Wyślij</button>
-    </p>
-</div>
+            <!-- Adres strony url -->
+            <div>
+                <p>
+                    <label>Adres strony url
+                        <input type="url" name="url">
+
+                    </label>
+                </p>
+            </div>
+
+            <!-- auto completebox -->
+            <div>
+                <p>
+                    <label>Marka samochodu</label>
+                    <Select name="CarBrand" list="carBrands">
+                        <datalist id="carBrands">
+                            <option>BMW</option>
+                            <option>Audi</option>
+                            <option>Mazda</option>
+                            <option>Toyota</option>
+                        </datalist>
+                    </Select>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <input type="hidden" name="secret" value="dddd">
+                </p>
+            </div>
+            <!-- kolor -->
+            <div>
+                <p>
+                    <label>Kolor
+                        <input type="color" name="color" value="#cccccc">
+                    </label>
+                </p>
+            </div>
+            <!-- data i czas-->
+            <div>
+                <p>
+                    <label>Kolor
+                        <input type="date" name="date">
+                        <input type="datetime" name="dateAndTime">
+                        <input type="time" name="time">
+                        <input type="week" name="week">
+                        <input type="month" name="month">
+                    </label>
+                </p>
+                <p>
+                    <button>Wyślij</button>
+                    <!-- lub -->
+                    <input type="submit" value="Wyślij3">
+                    <button type="reset">Wyczyść formularz</button>
+                </p>
+            </div>
     </form>
 </body>
 
