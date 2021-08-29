@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bmi</title>
+    <link href="css/style2.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
+    <link href="css/bmi.css" rel="stylesheet">
+    <script src="js/bmi.js" defer></script>
+</head>
+
+<body>
+    <p>
+        Przelicz swoje BMI.
+    </p>
+    <div class="container">
+        <form class="js-form"> 
+
+            <fieldset>
+                <legend>Twoje dane</legend>
+
+                <p>
+                    <label>Twój wzrost:
+                        <input class="js-height" type="number" min="1" step="any" value="170" reuired>
+                    </label>
+                </p>
+                <p>
+                    <label>Twój waga:
+                        <input class="js-weight" type="number" name="weight" min="1" step="any" required >
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Pole radio</legend>
+                <div>
+                    <ul>
+                        <li>
+                            <label>Opcja1:
+                                <input type="radio" value="opcja-1" name="radio" class="js-radio-1">
+                            </label>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <label>Opcja2:
+                                <input type="radio" value="opcja-2" name="radio" class="js-radio-2">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <p>
+                <button class="js-submmit">Przelicz BMI.</button>
+                <button type="reset" class="js-reset">Wyczyść.</button>
+            </p>
+
+        </form>
+        <p>Twoje BMI wynosi: <strong class="js-bmi">N/A</strong></p>
+    </div>
+</body>
+
+</html>

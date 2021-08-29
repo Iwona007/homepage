@@ -1,16 +1,52 @@
 .form__labeltext {
-     width: 100%;
-     width: 150px;
-     display: inline-block;
-     margin-right: 5px;
+    width: 100%;
+    width: 200px;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 .form__field {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
+}
+
+.form__field:required {
+    border-color:#777;
+}
+
+.form__field:invalid {
+    background-color: hsl(0, 53%, 90%);
+}
+
+/* .form__field:out-of-range {
+dla pól które nie mieszczą sie w min imax
+} */
+
+.form__field:disabled {
+    background-color: #aaa;
+}
+
+/* .form_field klasa, read-only pseudoklasa, i klasa i 
+pseudo klasa licz się do Specificity, do wag*/
+.form__field:read-only { 
+background-color: #eee;
+}
+/* klasa i selktor dlatego ma mniejszą wagę niż klasa i 
+pseudoklasa dlatego jest to podwojone, Jest to selector Specificty*/
+.form_field--select.form_field--select {
+background-color: white;
+}
+
+.form__field--color {
+    padding: 0;
+    border: none;
+}
+.form__field--textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 .form__button {
@@ -27,5 +63,19 @@
 }
 
 .form__button:active {
-    background-color: hsl(180, 100%, 35%);;
+    background-color: hsl(180, 100%, 35%);
+}
+
+.form__fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.form__legend {
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
 }

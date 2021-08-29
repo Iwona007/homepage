@@ -13,19 +13,25 @@
     <link href="css/container.css" rel="stylesheet">
     <link href="css/form3.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </head>
 
 <body>
     <div class="container">
         <form class="form" action="https://postman-echo.com/post" method="POST" enctype="multipart/form-data">
-            <fieldset>
-                <legend>Dane osobowe</legend>
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    Dane osobowe</legend>
+                <p>
+                    Pola oznaczone * są wymagane.
+                </p>
                 <p>
                     <label>
                         <span class="form__labeltext">
-                            Imię:
+                            Imię*:
                         </span>
-                        <input class="form__field" name="firstName" minlength="3">
+                        <input class="form__field" name="firstName" required minlength="3">
                     </label>
                 </p>
                 <p>
@@ -37,9 +43,96 @@
                     </label>
                 </p>
                 <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Kilka słów o Tobie:
+                        </span>
+                        <textarea class="form__field form__field--textarea" name="description">
+                    </textarea>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Element wyłączony:
+                        </span>
+                        <input class="form__field" name="disable" disabled value="tekst nie zostanie wysłany">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Element read-only:
+                        </span>
+                        <input class="form__field" name="readonly" readonly value="tekst zostanie wyslłny">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Kolor oczu:
+                        </span>
+                        <select class="form__field form_field--select" name="eyesColor">
+                            <option>Niebieskie</option>
+                            <option>Brązowe</option>
+                            <option>Zielone</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Kolor oczu:
+                        </span>
+                        <input type="color" class="form__field form__field--color" name="eyesColorInput">
+
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Wzrost:
+                        </span>
+                        <input type="range" class="form__field" name="hight" min="0" max="250">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Załącz swoje Cv:
+                        </span>
+                        <input class="form__field" type="file" name="cv">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Opcja 1:
+                        </span>
+                        <input type="radio" name="opcja1">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Opcja 2:
+                        </span>
+                        <input type="checkbox" name="opcja2">
+                    </label>
+                </p>
+                <p>
                     <label>Kod pocztowy: <input name="kod pocztowy" pattern="[0-9]{2}-[0-9]{3}">
                     </label>
                 </p>
+                <p>
+                    <label>
+                        <span class="form__labeltext">
+                            Data:
+                        </span>
+                        <input class="form__field js-date" name="date">
+                    </label>
+                </p>
+
             </fieldset>
             <p>
                 <button class="form__button">Wyślij</button>
@@ -47,6 +140,11 @@
             </p>
         </form>
     </div>
+    <script>
+        flatpickr(".js-date", {
+            mode: "range"
+        });
+    </script>
 </body>
 
 </html>
