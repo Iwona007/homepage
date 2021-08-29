@@ -28,4 +28,19 @@ formElement.addEventListener("submit", (event) => {
 
     bmiElement.innerText = bmi.toFixed(2)
     console.log(bmi)
-})
+});
+
+
+// tak przelicza się cały czas czyli że w locie, dochodzi do interakcji natychmiast gdy użytkownik zmieni cś
+// w polu . lepiej submit bo wtedy formularz jest zwalidowany, sprawdzony czy np są właście licze, czy nie ma np NaN
+// EventListener wystrczy dodąc w jednym miejscu w formularzu dlatego że zdarzenia ida w górę DOM w górę formularza a więć 
+// wystrczy w jednym miejscu. 
+// formElement.addEventListener("input", () => {
+  
+//     let height = heightElement.value;
+//     let weight = wightElement.value;
+//     let bmi = weight / ((height / 100) ** 2)
+
+//     bmiElement.innerText = bmi.toFixed(2)
+//     console.log(bmi)
+// });
