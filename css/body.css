@@ -1,0 +1,42 @@
+.body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.body__header {
+    color: #d7498fd7;
+}
+
+.body__unorderedList {
+    padding-left: 15px;
+    list-style-type: "😎";
+}
+
+.body__listItem {
+    margin: 10px 10px;
+    /* outline: n; */
+}
+
+.body__link {
+    text-decoration: none;
+}
+
+.body__link:visited {
+    color: rgba(165, 15, 48, 0.705);
+}
+
+.body__link:focus {
+    outline: 2px solid currentColor;
+}
+
+.body__link:hover {
+    color: black;
+    border-bottom: 1px solid;
+    /* outline: none; */
+}
+
+.body__imageStyle {
+    width: 50%;
+    border-radius: 50%;
+}

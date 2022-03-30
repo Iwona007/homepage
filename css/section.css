@@ -1,0 +1,85 @@
+.section {
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 2px solid rgba(165, 15, 48, 0.705);
+    margin: 5px 5px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+.section__subHeader2 {
+    color: #d7498fd7;
+}
+
+.section__subHeader3 {
+    text-align: center;
+}
+
+.section__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.section__tableCell {
+    border: 2px solid purple;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(19, 18, 20, 0.432);
+    background: #eceff1;
+}
+
+.section__tableCell--header {
+    background-color: rgb(133, 119, 212);
+    font-weight: bolder;
+    color: rgba(240, 233, 233, 0.993);
+}
+
+.section__tableRow:nth-child(even) {
+    background-color: #eee;
+}
+
+.section__tableRow:hover {
+    background-color: #ddd;
+}
+
+.section__container {
+    overflow-x: auto;
+}
+
+.section__caption {
+    caption-side: top;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.section__button {
+    border-radius: 5%;
+    border-color: rgb(134, 17, 41);
+    background-color: rgb(187, 25, 58);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.section__button--remove {
+    float: right;
+    border-color: black;
+}
+
+.section__button--clone {
+    float: left;
+    border-color: black;
+}
+
+.section--colorUpdated {
+    color: rgba(19, 18, 20, 0.432);
+    background: #eceff1;
+}
+
+.section--newColor {
+    background: #fbfbfb;
+}
