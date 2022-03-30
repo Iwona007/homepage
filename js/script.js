@@ -43,8 +43,10 @@ changeColor.addEventListener("click", e => {
     todo.classList.toggle("newcolor");
     if (todo.classList.contains("newcolor")) {
         color.innerHTML = "Alice blue";
+        console.log(`teraz jest: Alice blue`)
     } else {
         color.innerHTML = "Snow";
+        console.log(`teraz jest: Snow`)
     }
 });
 
