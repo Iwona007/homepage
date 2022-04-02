@@ -13,7 +13,7 @@ let changeText = document.querySelector(".js-changeText");
 let textContain = document.querySelector(".js-textContain");
 
 cloneImage.addEventListener("click", (e) => {
-    let imageAction = document.querySelector(".body__imageStyle");
+    const imageAction = document.querySelector(".body__imageStyle");
     let cloneImage = imageAction.cloneNode(true);
     target.appendChild(cloneImage);
     console.log("obraz.jpg zostało skopiowane.");
