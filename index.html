@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iwona Adamkiewicz - programistka</title>
+    <title>Iwona Adamkiewicz - programmer</title>
     <meta property="og:image" content="images/home.png">
     <link rel="icon" href="images/Ivon_192.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/body.css">
     <link rel="stylesheet" href="css/section.css">
@@ -18,147 +18,166 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
-<body class="body">
-<header>
-    <h1 class="body__header1">Witaj na mojej stronie</h1>
-</header>
 
-<nav>
-    <ul class="body__unorderedList">
-        <li class="body__listItem"><a class="body__link" href="#o-mnie">O mnie</a></li>
-        <li class="body__listItem"><a class="body__link" href="#zainteresowania">Hobby</a></li>
-        <li class="body__listItem"><a class="body__link" href="#jak-dziala-strona">Jak działa strona</a></li>
-        <li class="body__listItem"><a class="body__link" href="#Sql-izolacja-transakcji">
-            Sql:poziomy-izolacji-transakcji. Tabela</a></li>
-    </ul>
-</nav>
+<body class="body section--colorUpdated">
+    <button class="js-changeColor section__button section__button--right">Change color: <span
+            class="js-colorName">Dark</span>
+    </button>
+    <header>
+        <h1 class="body__header">Welcome on my website</h1>
+    </header>
 
-<main>
-    <article class="section" id="o-mnie">
-        <p>Cześć, jestem Iwona. Na codzień pracuję jako junior Java developerem. Poza pracą uczę się <strong>
-            języka
-            niemieckiego </strong> co jest dla mnie wyzwaniem. Obecnie uczę się języka w programowaniu.
-            oraz programowania w <i><b>JavaScript</b></i>. Zapisałam się na kurs ponieważ chcę nabyć umijętności w
-            pisaniu repsponsywnych stron intenetowych. I w tym celu zaprzyjaźnić się z <i><b>JavaScriptem
-                :)</b></i>.
-        </p>
+    <nav>
+        <ul class="body__unorderedList">
+            <li class="body__listItem"><a class="body__link" href="#abot-me">About me</a></li>
+            <li class="body__listItem"><a class="body__link" href="#hobby">Hobby</a></li>
+            <li class="body__listItem"><a class="body__link" href="#a-little-bit-Sql">A little bit Sql</a></li>
+            <li class="body__listItem"><a class="body__link" href="#isolation-transakcion">4 islotaion level</a></li>
+        </ul>
+    </nav>
 
-        <!-- <div class="body__imageStyle">
-            <img class="body__imageStyle" src="https://i.postimg.cc/wvs1CZxP/Iwona.png" alt="Iwona - autoka strony.">
-        </div> -->
-    </article>
+    <main>
+        <article class="section" id="abot-me">
+            <div class="body__imageStyle ">
+                <img class="body__imageStyle js-image" src="https://i.postimg.cc/wvs1CZxP/Iwona.png"
+                    alt="Iwona-autoka strony.">
+            </div>
+            <div class="button">
+                <button class="section__button  js-hideImage">Hide image</button>
+                <button class="section__button  js-orginalImage">Orginal image size</button>
+                <button class="section__button section__button--remove">Remove image</button>
+                <button class="section__button"> <a class="section__button section__button--top" href="#top">do
+                        góry</a></button>
+            </div>
+        </article>
 
-    <section class="section" id="zainteresowania">
-        <h2 class="section__subHeader2">Hobby</h2>
-        <p>
-            Poza pasją do programowania, <em>uwielbiam</em> Zumbę oraz j.angielski o który staram się dbać poprzez
-            czytanie dokumentacji
-            w tym języku lub też uczenie się z tutoriali angielsko języcznych. W czasie przerw pomiędzy pracą i
-            nauką dbam o aktywny odpoczynek
-            poprzez fitness lub
-            <button class="section__button js-changeText "><span class="js-textContain">kliknij aby przeczytać</span>
+        <article class="section">
+            <p>Hello, I am Iwona and I work as Java engineer. Beyond the work I learn <strong>German</strong>
+                what is a challange for me and coding in <i><b>JavaScript</b></i>.
+                I have enrolled on this course because I want to gain a new skill - how to write good responsive
+                websites.
+                And in order to achieve this I want to understand <i><b>JavaScript :)</b></i>.
+                <button class="section__button section__button--right">
+                    <a class=" section__button section__button--top" href="#top">up</a>
+                </button>
+            </p>
+        </article>
+
+        <section class="section" id="hobby">
+            <h2 class="section__subHeader2">Hobby</h2>
+            <p>
+                Beyond my passion for programming, I <em>loved</em> Zumbę and English. So I like reading about
+                programming in English
+                and learn from english language tutorials. In the mintime I care about ative recriation by
+                <button class="section__button js-changeText "><span class="js-textContain">click</span>
+                </button> or <button class="js-textShow2 section__button">click</button>
+                <button class="section__button section__button--right">
+                    <a class="section__button section__button--top" href="#top">up</a>
+                </button>
+            </p>
+        </section>
+
+        <section class="section" id="a-little-bit-Sql">
+            <div class="section__container">
+                <table class="section__table">
+                    <caption class="section__caption section__subHeader2">
+                        <h2>A little bit Sql</h2>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th class="section__tableRow">
+                            <th class="section__tableCell section__tableCell--header" scope="col">x</th>
+                            <th class="section__tableCell section__tableCell--header" scope="col">Dirty Read</th>
+                            <th class="section__tableCell section__tableCell--header" scope="col">Non Repeatable Read
+                            </th>
+                            <th class="section__tableCell section__tableCell--header" scope="col">Phantom Read</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="section__tableRow"></th>
+                            <th class="section__tableCell section__tableCell--header" scope="row">Read Uncommitted</th>
+                            <td class="section__tableCell">Possible</td>
+                            <td class="section__tableCell">Possible</td>
+                            <td class="section__tableCell">Possible</td>
+                        </tr>
+                        <tr>
+                            <th class="section__tableRow"></th>
+                            <th class="section__tableCell section__tableCell--header" scope="row">Read Commited</th>
+                            <td class="section__tableCell">Solved</td>
+                            <td class="section__tableCell">Possible</td>
+                            <td class="section__tableCell">Possible</td>
+                        </tr>
+                        <tr>
+                            <th class="section__tableRow"></th>
+                            <th class="section__tableCell section__tableCell--header" scope="row">Repeatable Read</th>
+                            <td class="section__tableCell">Solved</td>
+                            <td class="section__tableCell">Solved</td>
+                            <td class="section__tableCell">Possible</td>
+                        </tr>
+                        <tr>
+                            <th class="section__tableRow"></th>
+                            <th class="section__tableCell section__tableCell--header" scope="row">Serializable</th>
+                            <td class="section__tableCell">Solved</td>
+                            <td class="section__tableCell">Solved</td>
+                            <td class="section__tableCell">Solved</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="section__button section__button--right">
+                    <a class=" section__button section__button--top" href="#top">up</a>
+                </button>
+            </div>
+        </section>
+
+        <article class="section" id="isolation-transakcion">
+            <h2 class="section__subHeader2"> 4 transaction isolation levels</h2>
+            <p>There are 4 transaction isolation levels:
+            <ol>
+                <li>Read uncommitted</li>
+                <li>Read commited</li>
+                <li>Repeatable read</li>
+                <li>Serializable</li>
+            </ol>
+            There have been created in order to privide date integrity. When databse ist used by 2 or more users:
+            user nr1 only is reading those data but in the same time user nr2 is makeing updates on those deta.
+            So there are crucial questions:
+            <ul>
+                <li>
+                    How can we manage concurrent access to a database properly?
+                </li>
+                <li>
+                    How are we able to handle multiple transactions?
+                </li>
+            </ul>
+            And what is crucial date have to stay consistent. And that way datebases provide transaction isolation
+            levels.
+            What that mean is shortly describe in the table below which I encourage you to read.
+            <br />
+            <strong><i>Read uncommitted:</i></strong> Transaction nr1 is reading modified data by transaction nr2
+            before the transaction nr2 is commited.
+            <br />
+            <strong><i>Read commited:</i></strong> Because of the transaction nr.1 is locking 
+            the transaction nr2 cannot read date aslong as the transaction nr1 is not ended. This is a solution for 
+            the problem "dirty read" - that is reading the data which have not been neither commited nor rollbacked. 
+            <br/>
+            <strong><i>Repeatable read:</i></strong>
+            Transakcja nr.1 is locking while the data are reading. And this is untill the transaction nr1 is ended. In practical
+            way this mean that another transactions cannot make any other modifications.
+            <br />
+            <strong><i>Serializable:</i></strong> Transaction nr.1 is locking untill it's end. Another transactions
+            cannot make any: changes and nither added nor deleteed date. The other transaction are waitng when the 
+            transaction nr1 will be finished.
+            <button class="section__button section__button--right">
+                <a class=" section__button section__button--top" href="#top">up</a>
             </button>
-            .
-            <button class="js-textShow2 section__button">Pokaż dodatkowy text</button>
-        </p>
-    </section>
+            </p>
+        </article>
+    </main>
 
-    <section class="section" id="jak-dziala-strona">
-        <p>Strona działa w taki sposób że albo klonuje zdjęcie albo je usówa.</p>
-        <div class="section__container">
-            <button class="section__button section__button--remove">Remove img</button>
-            <button class="section__button section__button--clone">Clone img</button>
-        </div>
-    </section>
-
-    <section class="section section--colorUpdated" id="Sql-izolacja-transakcji">
-        <button class="js-changeColor section__button">Zmień tło na kolor: <span class="js-colorName">Snow</span>
-        </button>
-
-        <div class="section__container">
-            <table class="section__table">
-                <caption class="section__caption">SQL: poziomy izolacji transakcji</caption>
-                <thead>
-                <tr>
-                    <th class="section__tableRow">
-                    <th class="section__tableCell section__tableCell--header" scope="col">x</th>
-                    <th class="section__tableCell section__tableCell--header" scope="col">Dirty Read</th>
-                    <th class="section__tableCell section__tableCell--header" scope="col">Non Repeatable Read</th>
-                    <th class="section__tableCell section__tableCell--header" scope="col">Phantom Read</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th class="section__tableRow"></th>
-                    <th class="section__tableCell section__tableCell--header" scope="row">Read Uncommitted</th>
-                    <td class="section__tableCell">Possible</td>
-                    <td class="section__tableCell">Possible</td>
-                    <td class="section__tableCell">Possible</td>
-                </tr>
-                <tr>
-                    <th class="section__tableRow"></th>
-                    <th class="section__tableCell section__tableCell--header" scope="row">Read Commited</th>
-                    <td class="section__tableCell">Solved</td>
-                    <td class="section__tableCell">Possible</td>
-                    <td class="section__tableCell">Possible</td>
-                </tr>
-                <tr>
-                    <th class="section__tableRow"></th>
-                    <th class="section__tableCell section__tableCell--header" scope="row">Repeatable Read</th>
-                    <td class="section__tableCell">Solved</td>
-                    <td class="section__tableCell">Solved</td>
-                    <td class="section__tableCell">Possible</td>
-                </tr>
-                <tr>
-                    <th class="section__tableRow"></th>
-                    <th class="section__tableCell section__tableCell--header" scope="row">Serializable</th>
-                    <td class="section__tableCell">Solved</td>
-                    <td class="section__tableCell">Solved</td>
-                    <td class="section__tableCell">Solved</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <article class="section">
-        <h3 class="section__subHeader3"> 4 poziomy izolacji transakcji</h3>
-        <p>Wystepują 4 poziomy izolacji transakcji:
-        <ol>
-            <li>Read uncommitted</li>
-            <li>Read commited</li>
-            <li>Repeatable read</li>
-            <li>Serializable</li>
-        </ol>
-        Powstały one w celu zabezpieczenia spojnośći danych. Wiaże się to z kożystanie z bazy danych przez wielu
-        użytkowników. W związku z czym moze dojść do modyfikacji np. przez użytkownika nr.2 pomiędzy
-        sprawdzeniem danych przez np użytkownika nr.1, i wykonaniem aktalizacji tych danych przez użytkownika
-        nr.1. W tabeli zostały przedstawione blokowania z informacją które problemy zostały rowiązane a które
-        nie.
-
-        Tak więc: <br/>
-        <strong><i>Read uncommitted:</i></strong> Transakcja nr1 odczytuje dane które są modyfikowane przez
-        transakcje nr2 przed
-        zatwierdzeniem tej transakcji. <br/>
-        <strong><i>Read commited:</i></strong> Transakcja nr.1 jest zalorzona blokada dzieki której transakcja nr.2
-        nie może
-        czytać danych aż do
-        zakończenia transakcji nr.1. Rozwiązuje to problem "dirty read" czyli odczytu danych ktor nie zosatły
-        jeszcze ani zatwierdzone ani wycofane. <br/>
-        <strong><i>Repeatable read:</i></strong>
-        Transakcja nr.1 w czasie odczytu danych zakłada blokadę aż do zakończenia transakcji.
-        Inne transakcje nie mogą więc wprowadzac zmian.<br/>
-        <strong><i>Serializable:</i></strong> Transakcja nr.1 zakłada blokadę aż do zakończenia transakcji. Inne
-        transakcje nie
-        mogą wprowadzać zmian, dodawać, czy usuwać dane. Pozostałe transakcje czeklją aż transakcja nr.1 się
-        zakończy.
-        </p>
-    </article>
-</main>
-
-<footer class="footer">
-    <p>Copyright 2021. Wszelkie prawa zastrzeżone.</p>
-</footer>
+    <footer class="footer">
+        <p>Copyright &#xa9; 2022 by Iwona Adamkiewicz.</p>
+    </footer>
 </body>
 
 </html>
