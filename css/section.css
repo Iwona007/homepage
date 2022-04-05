@@ -1,19 +1,13 @@
 .section {
     width: 100%;
-    font-size: 18px;
     padding: 5px 10px;
     border: 2px solid rgba(165, 15, 48, 0.705);
     margin: 5px 5px;
-    font-family: "Lato", sans-serif;
-    line-height: 1.5;
 }
 
 .section__subHeader2 {
-    color: #d7498fd7;
-}
-
-.section__subHeader3 {
     text-align: center;
+    color: #d7498fd7;
 }
 
 .section__table {
@@ -52,7 +46,6 @@
     caption-side: top;
     padding: 10px;
     font-weight: bold;
-    color: black;
 }
 
 .section__button {
@@ -65,21 +58,39 @@
     font-weight: bold;
 }
 
-.section__button--remove {
-    float: right;
-    border-color: black;
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1% 0;
 }
 
-.section__button--clone {
+.section__button--right
+ {
+    float: right;  
+}
+
+.section__button--remove, 
+.section__button--hide {
     float: left;
-    border-color: black;
 }
 
+.section__button--top {
+    text-decoration: none;
+}
+
+.section__button--margin{
+    margin-top: 2%;
+}
+
+.section_hideImage,
 .section--colorUpdated {
-    color: rgba(19, 18, 20, 0.432);
-    background: #eceff1;
+    color: black;
+    background: whitesmoke; /*#eceff1*/
 }
 
 .section--newColor {
-    background: #fbfbfb;
+    color: rgb(251, 251, 251);
+    background: #2c2b2b;  /*#fbfbfb to chyba Alice blue*/
 }
+

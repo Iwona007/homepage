@@ -3,8 +3,6 @@ html {
     font-family: "Lato", sans-serif;
 }
 
-*,
-::after,
-::before {
+*, ::after, ::before {
     box-sizing: inherit;
 }
