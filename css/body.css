@@ -28,6 +28,7 @@
 
 .body__listItem {
     margin: 15px 15px;
+    font-size: 20px;
 }
 
 .body__link {
@@ -57,4 +58,14 @@
 
 .body__imageStyleHiden {
     display: none;
+}
+
+.body--colorUpdated {
+    color: black;
+    background: whitesmoke; 
+}
+
+.body--newColor {
+    color: rgb(251, 251, 251);
+    background: #2c2b2b; 
 }

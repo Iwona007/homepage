@@ -1,0 +1,22 @@
+.button {
+    border-radius: 5%;
+    border-color: rgb(134, 17, 41);
+    background-color: rgb(187, 25, 58);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.button--right
+ {
+    float: right;  
+}
+
+.button--top {
+    text-decoration: none;
+}
+
+.button--margin{
+    margin-top: 2%;
+}
