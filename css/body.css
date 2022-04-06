@@ -6,7 +6,7 @@
     font-size: 18px;
     font-family: "Lato", sans-serif;
     line-height: 1.5;
-    color: blue;
+    /* color: rgb(87, 137, 199); */
 }
 
 .body__header {
@@ -33,6 +33,7 @@
 
 .body__link {
     text-decoration: none;
+    color: rgb(76, 137, 211)
 }
 
 .body__link:visited {
