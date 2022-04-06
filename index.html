@@ -13,14 +13,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
-<body class="body section--colorUpdated">
-    <button class="js-changeColor section__button section__button--right">Change color: <span
+<body class="body body--colorUpdated">
+    <button class="js-changeColor button button--right">Change color: <span
             class="js-colorName">Dark</span>
     </button>
     <header>
@@ -32,7 +33,7 @@
             <li class="body__listItem"><a class="body__link" href="#abot-me">About me</a></li>
             <li class="body__listItem"><a class="body__link" href="#hobby">Hobby</a></li>
             <li class="body__listItem"><a class="body__link" href="#a-little-bit-Sql">A little bit Sql</a></li>
-            <li class="body__listItem"><a class="body__link" href="#isolation-transakcion">4 islotaion level</a></li>
+            <li class="body__listItem"><a class="body__link" href="#isolation-transakcion">4 transaction isolation levels</a></li>
         </ul>
     </nav>
 
@@ -42,12 +43,12 @@
                 <img class="body__imageStyle js-image" src="https://i.postimg.cc/wvs1CZxP/Iwona.png"
                     alt="Iwona-autoka strony.">
             </div>
-            <div class="button">
-                <button class="section__button  js-hideImage">Hide image</button>
-                <button class="section__button  js-orginalImage">Orginal image size</button>
-                <button class="section__button section__button--remove">Remove image</button>
-                <button class="section__button"> <a class="section__button section__button--top" href="#top">do
-                        góry</a></button>
+            <div class="body__imageStyle">
+                <button class="button  js-hideImage">Hide image</button>
+                <button class="button  js-orginalImage">Orginal image size</button>
+                <button class="button js-buttonRemove">Remove image</button>
+                <button class="button"> <a class="button button--top" href="#top">up
+                    </a></button>
             </div>
         </article>
 
@@ -57,8 +58,8 @@
                 I have enrolled on this course because I want to gain a new skill - how to write good responsive
                 websites.
                 And in order to achieve this I want to understand <i><b>JavaScript :)</b></i>.
-                <button class="section__button section__button--right">
-                    <a class=" section__button section__button--top" href="#top">up</a>
+                <button class="button button--right">
+                    <a class=" button button--top" href="#top">up</a>
                 </button>
             </p>
         </article>
@@ -69,10 +70,10 @@
                 Beyond my passion for programming, I <em>loved</em> Zumbę and English. So I like reading about
                 programming in English
                 and learn from english language tutorials. In the mintime I care about ative recriation by
-                <button class="section__button js-changeText "><span class="js-textContain">click</span>
-                </button> or <button class="js-textShow2 section__button">click</button>
-                <button class="section__button section__button--right">
-                    <a class="section__button section__button--top" href="#top">up</a>
+                <button class="button js-changeText "><span class="js-textContain">click</span>
+                </button> or <button class="js-textShow2 button">click</button>
+                <button class="button button--right">
+                    <a class="button button--top" href="#top">up</a>
                 </button>
             </p>
         </section>
@@ -124,8 +125,8 @@
                         </tr>
                     </tbody>
                 </table>
-                <button class="section__button section__button--right">
-                    <a class=" section__button section__button--top" href="#top">up</a>
+                <button class="button button--right">
+                    <a class=" button button--top" href="#top">up</a>
                 </button>
             </div>
         </section>
@@ -157,19 +158,20 @@
             <strong><i>Read uncommitted:</i></strong> Transaction nr1 is reading modified data by transaction nr2
             before the transaction nr2 is commited.
             <br />
-            <strong><i>Read commited:</i></strong> Because of the transaction nr.1 is locking 
-            the transaction nr2 cannot read date aslong as the transaction nr1 is not ended. This is a solution for 
-            the problem "dirty read" - that is reading the data which have not been neither commited nor rollbacked. 
-            <br/>
+            <strong><i>Read commited:</i></strong> Because of the transaction nr.1 is locking
+            the transaction nr2 cannot read date aslong as the transaction nr1 is not ended. This is a solution for
+            the problem "dirty read" - that is reading the data which have not been neither commited nor rollbacked.
+            <br />
             <strong><i>Repeatable read:</i></strong>
-            Transakcja nr.1 is locking while the data are reading. And this is untill the transaction nr1 is ended. In practical
+            Transakcja nr.1 is locking while the data are reading. And this is untill the transaction nr1 is ended. In
+            practical
             way this mean that another transactions cannot make any other modifications.
             <br />
             <strong><i>Serializable:</i></strong> Transaction nr.1 is locking untill it's end. Another transactions
-            cannot make any: changes and nither added nor deleteed date. The other transaction are waitng when the 
+            cannot make any: changes and nither added nor deleteed date. The other transaction are waitng when the
             transaction nr1 will be finished.
-            <button class="section__button section__button--right">
-                <a class=" section__button section__button--top" href="#top">up</a>
+            <button class="button button--right">
+                <a class=" button button--top" href="#top">up</a>
             </button>
             </p>
         </article>

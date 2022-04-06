@@ -1,7 +1,7 @@
 {
     const onRemoveImageButtonClick = () => {
         const imageAction = document.querySelector(".body__imageStyle");
-        const buttonRemove = document.querySelector(".section__button--remove");
+        const buttonRemove = document.querySelector(".js-buttonRemove");
         buttonRemove.addEventListener("click", () => {
             imageAction.remove();
         });
@@ -9,12 +9,12 @@
     onRemoveImageButtonClick();
 
     const onChangeBackgroundClick = () => {
-        const colorUpdated = document.querySelector(".section--colorUpdated");
+        const colorUpdated = document.querySelector(".body--colorUpdated");
         const colorName = document.querySelector(".js-colorName");
         const changeColor = document.querySelector(".js-changeColor");
         changeColor.addEventListener("click", (e) => {
-            colorUpdated.classList.toggle("section--newColor");
-            colorUpdated.classList.contains("section--newColor")
+            colorUpdated.classList.toggle("body--newColor");
+            colorUpdated.classList.contains("body--newColor")
                 ? (colorName.innerHTML = "Light")
                 : (colorName.innerHTML = "Dark");
         })
@@ -72,9 +72,5 @@
         });
     }
     onAddTextClick();
-
-
-
-
 }
 
