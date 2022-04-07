@@ -2,9 +2,9 @@
 
 ## Description
 
-Welcome on my website. I have created it as a part of the course: "Frontend Developer od podstaw", in order to learn in practical way how to write realy good resposive websites. Link for this course, please find here: [YouCode](https://youcode.pl).
-I also invite you to check my website where you can find some information about me and SQL :) . 
-
+Welcome on my website. I have created it in order to learn in practical way how to write realy good resposive websites. 
+I invite you to check my website where you can find some information about me and SQL :) . 
+![Homepage preview](gif/Iwona_Adamkiewicz_programmer.gif)
 ## Used technologies:
 
 - JavaScript;
