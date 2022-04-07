@@ -30,12 +30,8 @@
     color: rgba(240, 233, 233, 0.993);
 }
 
-.section__tableRow:nth-child(even) {
-    background-color: #eee;
-}
-
-.section__tableRow:hover {
-    background-color: #ddd;
+.section__tableCell:hover {
+    background-color:rgb(149, 131, 240);
 }
 
 .section__container {
@@ -46,5 +42,12 @@
     caption-side: top;
     padding: 10px;
     font-weight: bold;
+}
+
+.section__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
 }
 
