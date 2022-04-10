@@ -1,0 +1,33 @@
+.containerflex{
+    display: flex;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    padding:20px;
+    margin: 0 auto;
+
+}
+@media (max-width: 767px) {
+    .containerflex{
+        flex-wrap: wrap;
+    }
+
+    }
+
+.containerflex__item {
+    flex-basis: 34%;
+    margin: 20px;
+}
+
+@media (max-width: 767px) {
+    .containerflex__item {
+        flex-basis: 34%;
+       flex-grow: 1;
+    }
+}
+
+@media (max-width: 500px) {
+        .containerflex__item {
+            flex-basis: 51%;
+           flex-grow: 1;
+        }
+    }

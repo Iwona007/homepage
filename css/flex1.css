@@ -1,0 +1,59 @@
+.flex{
+    display: flex;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding:20px;
+    margin: 0 auto;
+
+}
+
+.flex__item {
+    flex-basis: 50%;
+    text-align: center;
+  
+    
+}
+
+@media (max-width: 767px) {
+.flex{
+    flex-wrap: wrap;
+}
+    .flex__item {
+        flex-basis: 100%;
+       
+    }
+}
+
+/* mobile first dla telefonu */
+
+/* .flex{
+    display: flex;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding:20px;
+    margin: 0 auto;
+flex-wrap: wrap;
+}
+
+.flex__item {
+    flex-basis: 100%;
+    text-align: center;
+  
+    
+}
+
+@media (min-width: 768px) {
+.flex{
+    flex-wrap: unset;
+}
+    .flex__item {
+        flex-basis: 50%;
+       
+    }
+} */
+
+/* 
+@media (orientation: landscape) {
+
+} */
+
