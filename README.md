@@ -9,6 +9,7 @@ I invite you to check my website where you can find some information about me an
 
 - JavaScript;
 - HTML;
+- BEM;
 - CSS;
 
 ## Demo version
