@@ -1,13 +1,4 @@
 {
-    const onRemoveImageButtonClick = () => {
-        const imageAction = document.querySelector(".body__imageStyle");
-        const buttonRemove = document.querySelector(".js-buttonRemove");
-        buttonRemove.addEventListener("click", () => {
-            imageAction.remove();
-        });
-    }
-    onRemoveImageButtonClick();
-
     const onChangeBackgroundClick = () => {
         const colorUpdated = document.querySelector(".body--colorUpdated");
         const colorName = document.querySelector(".js-colorName");
@@ -20,36 +11,40 @@
         })
     };
 
-    onChangeBackgroundClick();
-
-    const hideImageButtton = document.querySelector(".js-hideImage");
-    const image = document.querySelector(".js-image")
-
-    const hideImage = () => {
-        image.classList.toggle("body__imageStyleHiden")
-        hideImageButtton.innerText = image.classList.contains("body__imageStyleHiden")
-            ? "Show image"
-            : "Hide image";
+    const onImageButtonClick = () => {
+        const hideImageButtton = document.querySelector(".js-hideImage");
+        const image = document.querySelector(".js-image")
+        const orginalImageButtton = document.querySelector(".js-orginalImage");
+        hideShowImage(hideImageButtton, image);
+        showOrginalImageSize(orginalImageButtton, image);
     }
 
-    const onHideImageButttonClick = () => {
-        hideImageButtton.addEventListener("click", hideImage)
+    const showOrginalImageSize = (orginalImageButtton, image) => {
+        orginalImageButtton.addEventListener("click", (e) => {
+            image.classList.toggle("body__imageStyle");
+            orginalImageButtton.innerText = image.classList.contains("body__imageStyle")
+                ? "Orginal image size"
+                : "Rounded image size";
+        });
     }
 
-    onHideImageButttonClick();
 
-    const orginalImageButtton = document.querySelector(".js-orginalImage");
-    const orginalImageSize = () => {
-        image.classList.toggle("body__imageStyle")
-        orginalImageButtton.innerText = image.classList.contains("body__imageStyle")
-            ? "Orginal image size"
-            : "Rounded image size";
+    const hideShowImage = (hideImageButtton, image) => {
+        hideImageButtton.addEventListener("click", (e) => {
+            image.classList.toggle("body__imageStyleHiden");
+            hideImageButtton.innerText = image.classList.contains("body__imageStyleHiden")
+                ? "Show image"
+                : "Hide image";
+        });
     }
 
-    let onOrginal = () => {
-        orginalImageButtton.addEventListener("click", orginalImageSize)
+    const onRemoveImageButtonClick = () => {
+        const imageAction = document.querySelector(".body__imageStyle");
+        const buttonRemove = document.querySelector(".js-buttonRemove");
+        buttonRemove.addEventListener("click", () => {
+            imageAction.remove();
+        });
     }
-    onOrginal();
 
     const onShowTextOnClick = () => {
         const section = document.querySelector(".section");
@@ -63,14 +58,21 @@
         });
     }
 
-    onShowTextOnClick();
-
     const onAddTextClick = () => {
         const showTextButton2 = document.querySelector(".js-textShow2");
         showTextButton2.addEventListener("click", (e) => {
             showTextButton2.innerText = "yoga";
         });
     }
-    onAddTextClick();
+
+    const init = () => {
+        onChangeBackgroundClick();
+        onImageButtonClick();
+        onRemoveImageButtonClick();
+        onShowTextOnClick();
+        onAddTextClick();
+    }
+
+    init();
 }
 
