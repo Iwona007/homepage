@@ -32,6 +32,7 @@
 
 .section__tableCell:hover {
     background-color:rgb(149, 131, 240);
+    color: rgba(240, 233, 233, 0.993);
 }
 
 .section__container {
